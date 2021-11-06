@@ -7,7 +7,7 @@ query = "cat"
 
 query = {'q': query}
 
-response = requests.get(server_address, verify=False, params=query)
+response = requests.get(server_address, verify=True, params=query)
 print("send a get requrest to", server_address)
 
 print(response.status_code, response.reason)
